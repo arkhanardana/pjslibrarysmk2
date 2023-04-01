@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 2000px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+/* Banner Cuyyy */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(pjsbanner.jpg);
+  background-size: cover;
+}
+
+.banner .content {
+  text-align: center;
+  max-width: 1000px;
+}
+
+.banner .content h2 {
+  font-size: 3.6em;
+  color: #fff;
+}
+
+.banner .content p {
+  font-size: 1em;
+  color: #fff;
+}
+
+.btn {
+  color: #fff;
+  font-size: 1em;
+  background-color: #1a5f7a;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  letter-spacing: 6px;
+}
+
+/* Header + Navbar Cuyyy */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky {
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo img {
+  width: 125px;
+  height: auto;
+}
+
+header.sticky .logo {
+  color: #111;
+}
+
+header.sticky ul li a {
+  color: #111;
+  font-weight: 400;
+}
+
+header .logo span {
+  color: #1a5f7a;
+}
+
+header .navigation {
+  display: flex;
+  position: relative;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+header .navigation li a:hover {
+  color: #1a5f7a;
+}
+
+/* About Cuyy */
+section {
+  padding: 100px;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .col50 {
+  width: 47%;
+  position: relative;
+}
+.titleText {
+  color: #111;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.titleText span {
+  color: #1a5f7a;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+  position: relative;
+  width: 100%;
+  /* min-height: 300px; */
+  height: 350px;
+}
+
+.row .col50 .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Menu Cuyy */
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fasilitas .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.fasilitas .content .box {
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.09);
+}
+
+.fasilitas .content .box .imgBx {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.fasilitas .content .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fasilitas .content .box .text {
+  padding: 15px 0 5px;
+}
+
+.fasilitas .content .box .text h3 {
+  font-weight: 400;
+  color: #111;
+}
+
+/* Expert Cuyy */
+.staff .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.staff .content .box {
+  width: 250px;
+  margin: 15px;
+}
+
+.staff .content .box .imgBx {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.staff .content .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.staff .content .box .text {
+  padding: 15px 0 5px;
+}
+
+.staff .content .box .text h3 {
+  font-weight: 400;
+  color: #111;
+}
+
+/* Contact Cuy */
+
+.contactForm {
+  padding: 75px 50px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  margin-top: 75px;
+}
+
+.contactForm h3 {
+  color: #111;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+
+.contactForm .inputBox .btn-submit {
+  font-size: 1em;
+  color: #fff;
+  background: #1a5f7a;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  width: 100px;
+  height: 50px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.contactForm .inputBox .btn-submit:hover {
+  border: 1.5px solid #1a5f7a;
+  color: #111;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+/* Footer Cuy */
+.copyrightText {
+  padding: 8px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.copyrightText p {
+  color: #333;
+}
+
+.copyrightText a {
+  color: #1a5f7a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Responsive Cuy */
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 10px 20px;
+  }
+
+  .banner .content p {
+    font-weight: 500;
+    opacity: 100%;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    width: 100%;
+    height: calc(100% - 55px);
+    position: fixed;
+    top: 55px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    transition: 3s;
+  }
+
+  header .navigation li {
+    margin-left: 0;
+  }
+
+  header .navigation li a {
+    color: #111;
+    font-size: 1.6em;
+  }
+
+  .fasilitas .content .box {
+    margin-top: 100px;
+  }
+
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .menuToggle.active {
+    background: url(close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  header.sticky .menuToggle {
+    filter: invert(1);
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+  }
+
+  .about .titleText {
+    text-align: center;
+  }
+
+  .about p {
+    text-align: center;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col50 {
+    position: relative;
+    width: 100%;
+  }
+
+  .row .col50 .imgBx {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .fasilitas .content {
+    margin-top: 20px;
+  }
+
+  .fasilitas .content .box {
+    margin: 10px;
+  }
+
+  .fasilitas .content .box .imgBx {
+    height: 260px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .titleText {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+
+  .testimonials .content .box {
+    width: 340px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .contactForm {
+    padding: 35px 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .banner .content h2 {
+    font-size: 2.2em;
+    color: #fff;
+  }
+}
